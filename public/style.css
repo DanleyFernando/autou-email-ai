@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Botão customizado do upload */
+.file-label {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #3498db;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.file-label:hover {
+  background: #2980b9;
+}
+
+#fileName {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.result-card {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #2c3e50;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.result-card h3 {
+  margin-top: 0;
+  color: #3498db;
+}
+
+.result-card p {
+  margin: 8px 0;
+}
+
+.error {
+  margin-top: 20px;
+  padding: 10px;
+  background: #ffe6e6;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+  border-radius: 8px;
+}

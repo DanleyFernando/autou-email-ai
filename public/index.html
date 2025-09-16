@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Classificação de E-mails</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📧 Classificação de E-mails</h1>
+    <form id="emailForm" enctype="multipart/form-data" onsubmit="return false;">
+      
+      <label>Selecione um arquivo (.txt ou .pdf):</label>
+      <!-- Botão customizado para upload -->
+      <label for="fileInput" class="file-label">📂 Escolher arquivo</label>
+      <input type="file" id="fileInput" name="file" accept=".txt,.pdf" hidden>
+      <span id="fileName">Nenhum arquivo escolhido</span>
+
+      <label for="emailText">Ou cole o texto do e-mail:</label>
+      <textarea id="emailText" name="text" placeholder="Digite ou cole aqui o conteúdo do e-mail"></textarea>
+
+      <button id="btnProcess" type="button">🚀 Processar</button>
+    </form>
+
+    <!-- Onde o resultado será exibido -->
+    <div id="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
